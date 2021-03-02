@@ -474,6 +474,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1187713807}
+  - component: {fileID: 1187713806}
   m_Layer: 0
   m_Name: Color_Manager
   m_TagString: Untagged
@@ -481,6 +482,19 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1187713806
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1187713805}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74155d25171db46fda0df7da8a0c130a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  color: {fileID: 0}
 --- !u!4 &1187713807
 Transform:
   m_ObjectHideFlags: 0

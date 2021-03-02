@@ -5,7 +5,7 @@ using UnityEngine;
 public class Color : MonoBehaviour
 {
 
-    //public GameObject color;
+    public GameObject color;
 
     //public void ChangeColor()
     //{

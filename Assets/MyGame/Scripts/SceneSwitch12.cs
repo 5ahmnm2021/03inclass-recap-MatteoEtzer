@@ -22,7 +22,7 @@ public class SceneSwitch12 : MonoBehaviour
     }
     public void SceneSwitcher23()
     {
-        SceneManager.LoadScene("02Countscreen");
+        SceneManager.LoadScene("02Countscene");
     }
     public void SceneSwitcher31()
     {
