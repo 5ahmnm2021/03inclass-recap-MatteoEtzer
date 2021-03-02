@@ -931,8 +931,8 @@ MonoBehaviour:
   Number1: {fileID: 1223356021}
   Number2: {fileID: 1840327064}
   Result: {fileID: 670900663}
-  Number1Int: 0
-  Number2Int: 0
+  Number1Float: 0
+  Number2Float: 0
 --- !u!4 &556824387
 Transform:
   m_ObjectHideFlags: 0
@@ -1674,7 +1674,7 @@ GameObject:
   - component: {fileID: 1240579359}
   - component: {fileID: 1240579358}
   m_Layer: 5
-  m_Name: AddNumbersText
+  m_Name: CalculateNumbersText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1732,7 +1732,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Add numbers!
+  m_Text: Calculate numbers!
 --- !u!222 &1240579359
 CanvasRenderer:
   m_ObjectHideFlags: 0
