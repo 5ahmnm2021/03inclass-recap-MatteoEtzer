@@ -16,8 +16,16 @@ public class SceneSwitch12 : MonoBehaviour
     {
         
     }
-    public void SceneSwitcher()
+    public void SceneSwitcher12()
     {
         SceneManager.LoadScene("01Colorscene");
+    }
+    public void SceneSwitcher23()
+    {
+        SceneManager.LoadScene("02Countscreen");
+    }
+    public void SceneSwitcher31()
+    {
+        SceneManager.LoadScene("00Startscene");
     }
 }
