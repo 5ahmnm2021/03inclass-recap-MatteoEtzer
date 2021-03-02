@@ -9,21 +9,34 @@ public class Calculator : MonoBehaviour
     public InputField Number2;
     public Text Result;
 
-    public int Number1Int;
-    public int Number2Int;
-    public int ResultInt;
+    public float Number1Float;
+    public float Number2Float;
     
     public void Addition()
     {
-        Number1Int = int.Parse(Number1.text);
-        Number2Int = int.Parse(Number2.text);
-        Result.text = (Number1Int + Number2Int).ToString();
+        Number1Float = float.Parse(Number1.text);
+        Number2Float = float.Parse(Number2.text);
+        Result.text = (Number1Float + Number2Float).ToString();
     }
 
     public void Subtraction()
     {
-        Number1Int = int.Parse(Number1.text);
-        Number2Int = int.Parse(Number2.text);
-        Result.text = (Number1Int - Number2Int).ToString();
+        Number1Float = float.Parse(Number1.text);
+        Number2Float = float.Parse(Number2.text);
+        Result.text = (Number1Float - Number2Float).ToString();
+    }
+
+    public void Multiply()
+    {
+        Number1Float = float.Parse(Number1.text);
+        Number2Float = float.Parse(Number2.text);
+        Result.text = (Number1Float * Number2Float).ToString();
+    }
+
+    public void Divide()
+    {
+        Number1Float = float.Parse(Number1.text);
+        Number2Float = float.Parse(Number2.text);
+        Result.text = (Number1Float / Number2Float).ToString();
     }
 }
