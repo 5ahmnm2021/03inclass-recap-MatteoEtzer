@@ -193,7 +193,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Add
+  m_Text: 'Subtract
+
+'
 --- !u!222 &45744332
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -362,7 +364,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 91686475}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 556824386}
+        m_TargetAssemblyTypeName: Calculator, Assembly-CSharp
+        m_MethodName: Subtraction
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &91686475
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -548,7 +562,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 408392533}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 556824386}
+        m_TargetAssemblyTypeName: Calculator, Assembly-CSharp
+        m_MethodName: Addition
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &408392533
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -587,6 +613,52 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 408392530}
   m_CullTransparentMesh: 0
+--- !u!1 &556824385
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 556824387}
+  - component: {fileID: 556824386}
+  m_Layer: 0
+  m_Name: CalculatorController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &556824386
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 556824385}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0df2b55294ed84e4c990480486e89e4b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Number1: {fileID: 1223356021}
+  Number2: {fileID: 1840327064}
+  Result: {fileID: 670900663}
+--- !u!4 &556824387
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 556824385}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 505.65854, y: 355.59338, z: -29.540535}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &640085170
 GameObject:
   m_ObjectHideFlags: 0
