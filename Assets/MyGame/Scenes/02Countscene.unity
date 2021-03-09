@@ -931,8 +931,9 @@ MonoBehaviour:
   Number1: {fileID: 1223356021}
   Number2: {fileID: 1840327064}
   Result: {fileID: 670900663}
-  Number1Float: 0
-  Number2Float: 0
+  Message: {fileID: 1240579358}
+  number1Float: 0
+  number2Float: 0
 --- !u!4 &556824387
 Transform:
   m_ObjectHideFlags: 0
