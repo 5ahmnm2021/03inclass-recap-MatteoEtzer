@@ -12,27 +12,42 @@ public class Calculator : MonoBehaviour
 
     public float number1Float;
     public float number2Float;
-    
+    public bool caught1;
+    public bool caught2;
+
     public void Addition()
     {
         try
         {
             number1Float = float.Parse(Number1.text);
+            caught1 = false;
         }
         catch (System.Exception)
         {
-            Message.text = "Try again with numbers";
+            StartCoroutine(turnRedField1());
+            caught1 = true;
         }
         try
         {
             number2Float = float.Parse(Number2.text);
-
+            caught2 = false;
         }
         catch (System.Exception)
         {
-            Message.text = "Try again with numbers";
+            StartCoroutine(turnRedField2());
+            caught2 = true;
         }
-        Result.text = (number1Float + number2Float).ToString();
+        if (caught1 == true | caught2 == true)
+        {
+            Result.text = "No Result";
+        }
+        else
+        {
+            
+            Result.text = (number1Float + number2Float).ToString();
+            //caught1 = false;
+            //caught2 = false;
+        }
     }
 
     public void Subtraction()
@@ -41,18 +56,20 @@ public class Calculator : MonoBehaviour
         {
             number1Float = float.Parse(Number1.text);
         }
-        catch (System.Exception ex)
+        catch (System.Exception)
         {
-
+            StartCoroutine(turnRedField1());
         }
+
         try
         {
             number2Float = float.Parse(Number2.text);
         }
-        catch (System.Exception ex)
+        catch (System.Exception)
         {
-
+            StartCoroutine(turnRedField2());
         }
+        
         Result.text = (number1Float - number2Float).ToString();
     }
 
@@ -62,17 +79,17 @@ public class Calculator : MonoBehaviour
         {
             number1Float = float.Parse(Number1.text);
         }
-        catch (System.Exception ex)
+        catch (System.Exception)
         {
-
+            StartCoroutine(turnRedField1());
         }
         try
         {
             number2Float = float.Parse(Number2.text);
         }
-        catch (System.Exception ex)
+        catch (System.Exception)
         {
-
+            StartCoroutine(turnRedField2());
         }
         Result.text = (number1Float * number2Float).ToString();
     }
@@ -83,18 +100,34 @@ public class Calculator : MonoBehaviour
         {
             number1Float = float.Parse(Number1.text);
         }
-        catch (System.Exception ex)
+        catch (System.Exception)
         {
-
+            StartCoroutine(turnRedField1());
         }
+
         try
         {
             number2Float = float.Parse(Number2.text);
+            
         }
-        catch (System.Exception ex)
+        catch (System.Exception)
         {
-
+            StartCoroutine(turnRedField2());
         }
         Result.text = (number1Float / number2Float).ToString();
+    }
+    IEnumerator turnRedField1()
+    {
+        Result.text = "No Result";
+        Number1.image.color = new Color32(255, 0, 0, 255);
+        yield return new WaitForSeconds(2);
+        Number1.image.color = new Color32(255, 255, 255, 255);
+    }
+    IEnumerator turnRedField2()
+    {
+        Result.text = "No Result";
+        Number2.image.color = new Color32(255, 0, 0, 255);
+        yield return new WaitForSeconds(2);
+        Number2.image.color = new Color32(255, 255, 255, 255);
     }
 }
