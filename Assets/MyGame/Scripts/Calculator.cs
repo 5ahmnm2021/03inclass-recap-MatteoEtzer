@@ -146,15 +146,19 @@ public class Calculator : MonoBehaviour
     IEnumerator turnRedField1()
     {
         Result.text = "No Result";
+        Number1.text = "Try a valid number";
         Number1.image.color = new Color32(255, 0, 0, 255);
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(3);
+        //Number1.text = "Enter Number 1...";
         Number1.image.color = new Color32(255, 255, 255, 255);
     }
     IEnumerator turnRedField2()
     {
         Result.text = "No Result";
+        Number2.text = "Try a valid number";
         Number2.image.color = new Color32(255, 0, 0, 255);
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(3);
+        //Number2.text = "Enter Number 2...";
         Number2.image.color = new Color32(255, 255, 255, 255);
     }
 }
