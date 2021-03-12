@@ -43,10 +43,7 @@ public class Calculator : MonoBehaviour
         }
         else
         {
-            
             Result.text = (number1Float + number2Float).ToString();
-            //caught1 = false;
-            //caught2 = false;
         }
     }
 
@@ -55,67 +52,97 @@ public class Calculator : MonoBehaviour
         try
         {
             number1Float = float.Parse(Number1.text);
+            caught1 = false;
         }
         catch (System.Exception)
         {
             StartCoroutine(turnRedField1());
+            caught1 = true;
         }
-
         try
         {
             number2Float = float.Parse(Number2.text);
+            caught2 = false;
         }
         catch (System.Exception)
         {
             StartCoroutine(turnRedField2());
+            caught2 = true;
         }
-        
-        Result.text = (number1Float - number2Float).ToString();
+        if (caught1 == true | caught2 == true)
+        {
+            Result.text = "No Result";
+        }
+        else
+        {
+            Result.text = (number1Float - number2Float).ToString();
+        }
     }
 
-    public void Multiply()
+    public void Multiplication()
     {
         try
         {
             number1Float = float.Parse(Number1.text);
+            caught1 = false;
         }
         catch (System.Exception)
         {
             StartCoroutine(turnRedField1());
+            caught1 = true;
         }
         try
         {
             number2Float = float.Parse(Number2.text);
+            caught2 = false;
         }
         catch (System.Exception)
         {
             StartCoroutine(turnRedField2());
+            caught2 = true;
         }
-        Result.text = (number1Float * number2Float).ToString();
+        if (caught1 == true | caught2 == true)
+        {
+            Result.text = "No Result";
+        }
+        else
+        {
+            Result.text = (number1Float * number2Float).ToString();
+        }
     }
 
-    public void Divide()
+    public void Division()
     {
         try
         {
             number1Float = float.Parse(Number1.text);
+            caught1 = false;
         }
         catch (System.Exception)
         {
             StartCoroutine(turnRedField1());
+            caught1 = true;
         }
-
         try
         {
             number2Float = float.Parse(Number2.text);
-            
+            caught2 = false;
         }
         catch (System.Exception)
         {
             StartCoroutine(turnRedField2());
+            caught2 = true;
         }
-        Result.text = (number1Float / number2Float).ToString();
+        if (caught1 == true | caught2 == true)
+        {
+            Result.text = "No Result";
+        }
+        else
+        {
+            Result.text = (number1Float / number2Float).ToString();
+        }
     }
+
     IEnumerator turnRedField1()
     {
         Result.text = "No Result";
