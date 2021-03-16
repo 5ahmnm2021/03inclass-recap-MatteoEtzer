@@ -1,7 +1,10 @@
 # README
 MatteoEtzer's Project
 
-### Project description: 
+###Description:
+Project with scene switches, a color randomizer and a almost fully featured calculator.
+
+### Project description:
 Unity Recap 2020/2021
 
 ### Development platform: 

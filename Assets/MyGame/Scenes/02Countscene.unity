@@ -296,7 +296,7 @@ GameObject:
   - component: {fileID: 91686475}
   - component: {fileID: 91686474}
   m_Layer: 5
-  m_Name: Subtract
+  m_Name: SubtractBtn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -315,7 +315,7 @@ RectTransform:
   m_Children:
   - {fileID: 45744330}
   m_Father: {fileID: 1756665226}
-  m_RootOrder: 3
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -494,7 +494,7 @@ GameObject:
   - component: {fileID: 201298739}
   - component: {fileID: 201298738}
   m_Layer: 5
-  m_Name: Multiply
+  m_Name: MultiplyBtn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -513,7 +513,7 @@ RectTransform:
   m_Children:
   - {fileID: 2133268127}
   m_Father: {fileID: 1756665226}
-  m_RootOrder: 8
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -626,7 +626,7 @@ GameObject:
   - component: {fileID: 408392533}
   - component: {fileID: 408392532}
   m_Layer: 5
-  m_Name: Add
+  m_Name: AddBtn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -836,7 +836,7 @@ GameObject:
   - component: {fileID: 535912735}
   - component: {fileID: 535912734}
   m_Layer: 5
-  m_Name: Image
+  m_Name: OperatorSymbol
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -854,7 +854,7 @@ RectTransform:
   m_LocalScale: {x: 0.22521, y: 0.22521, z: 0.22521}
   m_Children: []
   m_Father: {fileID: 1756665226}
-  m_RootOrder: 7
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -932,8 +932,6 @@ MonoBehaviour:
   number2: {fileID: 1840327064}
   result: {fileID: 670900663}
   message: {fileID: 1240579358}
-  caught1: 0
-  caught2: 0
 --- !u!4 &556824387
 Transform:
   m_ObjectHideFlags: 0
@@ -1039,7 +1037,7 @@ GameObject:
   - component: {fileID: 670900664}
   - component: {fileID: 670900663}
   m_Layer: 5
-  m_Name: Result
+  m_Name: ResultText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1057,7 +1055,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1756665226}
-  m_RootOrder: 4
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1117,7 +1115,7 @@ GameObject:
   - component: {fileID: 774391407}
   - component: {fileID: 774391406}
   m_Layer: 0
-  m_Name: Scene_Controller
+  m_Name: SceneController
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1324,7 +1322,7 @@ GameObject:
   - component: {fileID: 1156311952}
   - component: {fileID: 1156311951}
   m_Layer: 5
-  m_Name: Divide
+  m_Name: DivideBtn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1343,7 +1341,7 @@ RectTransform:
   m_Children:
   - {fileID: 522367512}
   m_Father: {fileID: 1756665226}
-  m_RootOrder: 9
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1535,7 +1533,7 @@ GameObject:
   - component: {fileID: 1223356022}
   - component: {fileID: 1223356021}
   m_Layer: 5
-  m_Name: Number1
+  m_Name: Number1Ipf
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1555,7 +1553,7 @@ RectTransform:
   - {fileID: 1834200733}
   - {fileID: 80632988}
   m_Father: {fileID: 1756665226}
-  m_RootOrder: 2
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1693,7 +1691,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1756665226}
-  m_RootOrder: 5
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1853,7 +1851,7 @@ RectTransform:
   m_Children:
   - {fileID: 1336015310}
   m_Father: {fileID: 1756665226}
-  m_RootOrder: 6
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2044,15 +2042,15 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 408392531}
-  - {fileID: 1840327063}
-  - {fileID: 1223356020}
   - {fileID: 91686473}
-  - {fileID: 670900662}
-  - {fileID: 1240579357}
-  - {fileID: 1577808620}
-  - {fileID: 535912733}
   - {fileID: 201298737}
   - {fileID: 1156311950}
+  - {fileID: 1577808620}
+  - {fileID: 1223356020}
+  - {fileID: 1840327063}
+  - {fileID: 670900662}
+  - {fileID: 1240579357}
+  - {fileID: 535912733}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2153,7 +2151,7 @@ GameObject:
   - component: {fileID: 1840327065}
   - component: {fileID: 1840327064}
   m_Layer: 5
-  m_Name: Number2
+  m_Name: Number2Ipf
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2173,7 +2171,7 @@ RectTransform:
   - {fileID: 640085171}
   - {fileID: 891784843}
   m_Father: {fileID: 1756665226}
-  m_RootOrder: 1
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
