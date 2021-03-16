@@ -152,6 +152,7 @@ public class Calculator : MonoBehaviour
         //Number1.text = "Enter Number 1...";
         Number1.image.color = new Color32(255, 255, 255, 255);
     }
+
     IEnumerator turnRedField2()
     {
         Result.text = "No Result";
