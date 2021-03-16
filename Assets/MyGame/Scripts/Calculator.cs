@@ -1,49 +1,51 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
+//using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class Calculator : MonoBehaviour
 {
-    public InputField Number1;
-    public InputField Number2;
-    public Text Result;
-    public Text Message;
+    public InputField number1;
+    public InputField number2;
+    public Text result;
+    public Text message;
 
-    public float number1Float;
-    public float number2Float;
-    public bool caught1;
-    public bool caught2;
+    float number1Float;
+    float number2Float;
+    bool bool1;
+    bool bool2;
 
     public void Addition()
     {
         try
         {
-            number1Float = float.Parse(Number1.text);
-            caught1 = false;
+            number1Float = float.Parse(number1.text);
+            bool1 = false;
         }
         catch (System.Exception)
         {
             StartCoroutine(turnRedField1());
-            caught1 = true;
+            bool1 = true;
         }
+
         try
         {
-            number2Float = float.Parse(Number2.text);
-            caught2 = false;
+            number2Float = float.Parse(number2.text);
+            bool2 = false;
         }
         catch (System.Exception)
         {
             StartCoroutine(turnRedField2());
-            caught2 = true;
+            bool2 = true;
         }
-        if (caught1 == true | caught2 == true)
+
+        if (bool1 == true | bool2 == true)
         {
-            Result.text = "No Result";
+            result.text = "No Result";
         }
         else
         {
-            Result.text = (number1Float + number2Float).ToString();
+            result.text = (number1Float + number2Float).ToString();
         }
     }
 
@@ -51,31 +53,33 @@ public class Calculator : MonoBehaviour
     {
         try
         {
-            number1Float = float.Parse(Number1.text);
-            caught1 = false;
+            number1Float = float.Parse(number1.text);
+            bool1 = false;
         }
         catch (System.Exception)
         {
             StartCoroutine(turnRedField1());
-            caught1 = true;
+            bool1 = true;
         }
+
         try
         {
-            number2Float = float.Parse(Number2.text);
-            caught2 = false;
+            number2Float = float.Parse(number2.text);
+            bool2 = false;
         }
         catch (System.Exception)
         {
             StartCoroutine(turnRedField2());
-            caught2 = true;
+            bool2 = true;
         }
-        if (caught1 == true | caught2 == true)
+
+        if (bool1 == true | bool2 == true)
         {
-            Result.text = "No Result";
+            result.text = "No Result";
         }
         else
         {
-            Result.text = (number1Float - number2Float).ToString();
+            result.text = (number1Float - number2Float).ToString();
         }
     }
 
@@ -83,31 +87,33 @@ public class Calculator : MonoBehaviour
     {
         try
         {
-            number1Float = float.Parse(Number1.text);
-            caught1 = false;
+            number1Float = float.Parse(number1.text);
+            bool1 = false;
         }
         catch (System.Exception)
         {
             StartCoroutine(turnRedField1());
-            caught1 = true;
+            bool1 = true;
         }
+
         try
         {
-            number2Float = float.Parse(Number2.text);
-            caught2 = false;
+            number2Float = float.Parse(number2.text);
+            bool2 = false;
         }
         catch (System.Exception)
         {
             StartCoroutine(turnRedField2());
-            caught2 = true;
+            bool2 = true;
         }
-        if (caught1 == true | caught2 == true)
+
+        if (bool1 == true | bool2 == true)
         {
-            Result.text = "No Result";
+            result.text = "No Result";
         }
         else
         {
-            Result.text = (number1Float * number2Float).ToString();
+            result.text = (number1Float * number2Float).ToString();
         }
     }
 
@@ -115,51 +121,59 @@ public class Calculator : MonoBehaviour
     {
         try
         {
-            number1Float = float.Parse(Number1.text);
-            caught1 = false;
+            number1Float = float.Parse(number1.text);
+            bool1 = false;
         }
         catch (System.Exception)
         {
             StartCoroutine(turnRedField1());
-            caught1 = true;
+            bool1 = true;
         }
+
         try
         {
-            number2Float = float.Parse(Number2.text);
-            caught2 = false;
+            number2Float = float.Parse(number2.text);
+            bool2 = false;
         }
         catch (System.Exception)
         {
             StartCoroutine(turnRedField2());
-            caught2 = true;
+            bool2 = true;
         }
-        if (caught1 == true | caught2 == true)
+
+        if (bool1 == true | bool2 == true)
         {
-            Result.text = "No Result";
+            result.text = "No Result";
         }
         else
         {
-            Result.text = (number1Float / number2Float).ToString();
+            result.text = (number1Float / number2Float).ToString();
         }
     }
 
     IEnumerator turnRedField1()
     {
-        Result.text = "No Result";
-        Number1.text = "Try a valid number";
-        Number1.image.color = new Color32(255, 0, 0, 255);
-        yield return new WaitForSeconds(3);
-        //Number1.text = "Enter Number 1...";
-        Number1.image.color = new Color32(255, 255, 255, 255);
+        message.text = "Calculate Numbers, NOT Text!";
+        result.text = "No Result";
+        number1.text = "Try a valid number";
+        number1.image.color = new Color32(255, 0, 0, 255);
+        yield return new WaitForSeconds(2);
+        number1.image.color = new Color32(255, 255, 255, 255);
+        yield return new WaitForSeconds(5);
+        number1.text = "Enter Number 2...";
+        message.text = "Calculate Numbers!";
     }
 
     IEnumerator turnRedField2()
     {
-        Result.text = "No Result";
-        Number2.text = "Try a valid number";
-        Number2.image.color = new Color32(255, 0, 0, 255);
-        yield return new WaitForSeconds(3);
-        //Number2.text = "Enter Number 2...";
-        Number2.image.color = new Color32(255, 255, 255, 255);
+        message.text = "Calculate Numbers, NOT Text!";
+        result.text = "No Result";
+        number2.text = "Try a valid number";
+        number2.image.color = new Color32(255, 0, 0, 255);
+        yield return new WaitForSeconds(2);
+        number2.image.color = new Color32(255, 255, 255, 255);
+        yield return new WaitForSeconds(5);
+        number2.text = "Enter Number 2...";
+        message.text = "Calculate Numbers!";
     }
 }

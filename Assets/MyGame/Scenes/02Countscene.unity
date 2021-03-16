@@ -928,12 +928,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0df2b55294ed84e4c990480486e89e4b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Number1: {fileID: 1223356021}
-  Number2: {fileID: 1840327064}
-  Result: {fileID: 670900663}
-  Message: {fileID: 1240579358}
-  number1Float: 0
-  number2Float: 0
+  number1: {fileID: 1223356021}
+  number2: {fileID: 1840327064}
+  result: {fileID: 670900663}
+  message: {fileID: 1240579358}
   caught1: 0
   caught2: 0
 --- !u!4 &556824387
