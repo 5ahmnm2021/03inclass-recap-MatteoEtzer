@@ -4,23 +4,18 @@ using UnityEngine.UI;
 
 public class Calculator : MonoBehaviour
 {
-    //inputfields
     public InputField number1;
     public InputField number2;
 
-    //textfields
     public Text result;
     public Text message;
 
-    //floats
     float number1Float;
     float number2Float;
 
-    //bools
     bool bool1;
     bool bool2;
 
-    //strings
     string noResult = "No Result";
     string calcNumbersNotText = "Calculate Numbers, NOT Text!";
     string validNumber = "Try a valid number";
