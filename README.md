@@ -5,26 +5,24 @@ MatteoEtzer's Project
 Unity Recap 2020/2021
 
 ### Development platform: 
-macOS Big Sur, Visual Studio Mac, Unity 2020.1.5f1
+macOS Big Sur 11.1, Visual Studio Mac 8.9.1, Unity 2020.1.5f1
 
-### Target platform: 
+### Target platform:
 WebGL
 
 ### Visuals: 
 Nothing yet.
 
-### Necessary setup/execution steps: 
-Install Unity, open in Unity Hub.
+### Necessary setup/execution steps:
+Install Unity, open project folder in Unity Hub.
 
 ### Third party material: 
-Nothing yet.
+Unity Documentation
 
 ### Project state: 
 100%
 
-### Limitations: 
-
-### Lessons Learned:
-Revision of Unity/C# Basics. 
+### Lessons Learned: 
+Revision of Unity/C# basics. "Try-Catch" function. 
 
 Copyright by MatteoEtzer :)
