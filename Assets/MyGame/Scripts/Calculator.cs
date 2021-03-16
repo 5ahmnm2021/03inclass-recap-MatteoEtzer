@@ -1,19 +1,32 @@
 ﻿using System.Collections;
-//using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class Calculator : MonoBehaviour
 {
+    //inputfields
     public InputField number1;
     public InputField number2;
+
+    //textfields
     public Text result;
     public Text message;
 
+    //floats
     float number1Float;
     float number2Float;
+
+    //bools
     bool bool1;
     bool bool2;
+
+    //strings
+    string noResult = "No Result";
+    string calcNumbersNotText = "Calculate Numbers, NOT Text!";
+    string validNumber = "Try a valid number";
+    string enterNumber2 = "Enter Number 2...";
+    string enterNumber1 = "Enter Number 1...";
+    string calcNumbers = "Calculate Numbers!";
 
     public void Addition()
     {
@@ -41,7 +54,7 @@ public class Calculator : MonoBehaviour
 
         if (bool1 == true | bool2 == true)
         {
-            result.text = "No Result";
+            result.text = noResult;
         }
         else
         {
@@ -75,7 +88,7 @@ public class Calculator : MonoBehaviour
 
         if (bool1 == true | bool2 == true)
         {
-            result.text = "No Result";
+            result.text = noResult;
         }
         else
         {
@@ -109,7 +122,7 @@ public class Calculator : MonoBehaviour
 
         if (bool1 == true | bool2 == true)
         {
-            result.text = "No Result";
+            result.text = noResult;
         }
         else
         {
@@ -143,7 +156,7 @@ public class Calculator : MonoBehaviour
 
         if (bool1 == true | bool2 == true)
         {
-            result.text = "No Result";
+            result.text = noResult;
         }
         else
         {
@@ -153,27 +166,28 @@ public class Calculator : MonoBehaviour
 
     IEnumerator turnRedField1()
     {
-        message.text = "Calculate Numbers, NOT Text!";
-        result.text = "No Result";
-        number1.text = "Try a valid number";
+        message.text = calcNumbersNotText;
+        result.text = noResult;
+        number1.text = validNumber;
         number1.image.color = new Color32(255, 0, 0, 255);
         yield return new WaitForSeconds(2);
         number1.image.color = new Color32(255, 255, 255, 255);
         yield return new WaitForSeconds(5);
-        number1.text = "Enter Number 2...";
-        message.text = "Calculate Numbers!";
+        number1.text = enterNumber1;
+        message.text = calcNumbers;
     }
 
     IEnumerator turnRedField2()
     {
-        message.text = "Calculate Numbers, NOT Text!";
-        result.text = "No Result";
-        number2.text = "Try a valid number";
+        message.text = calcNumbersNotText;
+        result.text = noResult;
+        number2.text = validNumber;
         number2.image.color = new Color32(255, 0, 0, 255);
         yield return new WaitForSeconds(2);
         number2.image.color = new Color32(255, 255, 255, 255);
         yield return new WaitForSeconds(5);
-        number2.text = "Enter Number 2...";
-        message.text = "Calculate Numbers!";
+        number2.text = enterNumber2;
+        message.text = calcNumbers;
     }
+    
 }
